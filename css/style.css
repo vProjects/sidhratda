@@ -1,0 +1,207 @@
+@charset "utf-8";
+/* CSS Document */
+/**********Text Css**********/
+/********Text Css ends ******/
+/********** nav bar section css **************/
+.header{
+	height:70px;
+}
+.brand_header{
+	color:#ffffff;
+	font-weight:bold;
+	font-size:30px;
+	cursor:pointer;
+    display: block;
+    float: left;
+    padding:20px;
+    text-shadow: 0 1px 0 #FFFFFF;
+}
+.brand_header:hover{
+	text-decoration:none;
+	color:#ffffff;
+}
+.nav_top{
+	background-color: #0099CC;
+    position: fixed;
+    top: 0;
+}
+.nav_bar{
+	padding:15px 0px;
+	color:#ffffff;
+}
+.nav_bar li{
+}
+.nav_bar li a{
+	color:#ffffff;
+	font-size:17px;
+	cursor:pointer;
+}
+.nav_bar li:hover{
+	background-color:#0020FF;
+	border-radius:4px;
+}
+.nav_bar_active{
+	background-color:#0FB3F0;
+	border-radius:4px;
+}
+.nav_button{
+	margin-right:20px;
+}
+.content{
+	background-image:url(../img/content.png);
+	background-repeat:repeat;
+	padding:30px 0px;
+	min-height:720px;
+}
+/********* slider section***************/
+.slider_outline{
+	height:400px;
+	border-bottom:1px solid #DDD;
+}
+/********** home page form*********/
+.contact_form_h{
+	margin-bottom:3%;
+}
+.contact_form_label_h{
+	padding:7px 5px 10px;
+	font-size:14px;
+}
+.contact_form_h input[type="text"]{
+	height:22px;
+}
+.contact_form_h input[type="text"], .contact_form_h textarea{
+	width:60%;
+	margin-right:4%;
+	margin-bottom:6%;
+}
+.contact_form_h select{
+	width:64%;
+	margin-right:4%;
+	margin-bottom:20px;
+	height:31px;
+}
+.contact_form_h textarea{
+	height:80px;
+}
+.contact_form_h input[type="submit"]{
+	margin-right:4%;
+}
+
+/******** Container section*********/
+.page-header{
+	margin-bottom:25px;
+	border-bottom:1px solid #ddd;
+}
+.thumbnail_img{
+	height:240px;
+	width:100%;
+}
+.thumbnail_footer{
+	background-color: #EEEEEC;
+    border-top: 1px solid #DDDDDD;
+    padding: 20px 20px 5px;
+}
+.caption p{
+	color:#0179FE;
+}
+/******* footer css***********/
+.footer{
+	background-color:#0099CC;
+	padding:20px 0px 0px;
+}
+.footer_nav{
+	margin:10px 0px;
+}
+.footer_nav li a{
+	font-size:16px;
+	color:#ffffff;
+	text-decoration:none;
+	font-style:italic;
+}
+.footer_nav li a:hover{
+	color:#FC5F43;
+	transition:ease-in 0.5s all 0s;
+}
+.footer p{
+	font-size:17px;
+	color:#ffffff;
+	margin-top:10px;
+}
+/******* services page***********/
+.p_btn{
+	margin-top:10px;
+}
+/******* product page **********/
+.product_content{
+	padding:30px 0px 50px;
+	min-height:700px;
+}
+.thumbnail > .table-hover tbody tr td:hover{
+	background-color:#ffffff;
+}
+/********* about page **********/
+.about_row{
+	margin-bottom:25px;
+}
+.about_centered{
+	text-align:center;
+}
+.about_article{
+	line-height:22px;
+}
+.about_thumbnail_img{
+	height:200px;
+}
+/********** contact *************/
+.contact_form{
+	margin-bottom:30px;
+}
+.contact_form_label{
+	padding:5px;
+	font-size:16px;
+	margin-left:5px;
+}
+.contact_form input[type="text"]{
+	height:22px;
+}
+.contact_form input[type="text"], .contact_form textarea{
+	width:70%;
+	margin-right:4%;
+	margin-bottom:20px;
+}
+.contact_form select{
+	width:73%;
+	margin-right:4%;
+	margin-bottom:20px;
+	height:32px;
+}
+.contact_form textarea{
+	height:130px;
+}
+.contact_form input[type="submit"]{
+	margin-right:6%;
+}
+.contact_address{
+	font-size:16px;
+	line-height:26px;
+}
+.contact_bottom_space{
+	margin-bottom:20px;
+}
+
+/******* media Query*********/
+
+@media all and (min-width:760px) and (max-width:1000px), (min-width:100px) and (max-width:550px){
+	.contact_form input[type="text"], .contact_form textarea, .contact_form_h input[type="text"], .contact_form_h textarea{
+		float:none;
+	}
+	.contact_form select, .contact_form_h select{
+		float:none;
+	}
+	.contact_form_label, .contact_form_label_h{
+		float:none;
+	}
+	.contact_form input[type="submit"], .contact_form_h input[type="submit"]{
+		float:none;
+	}
+}
