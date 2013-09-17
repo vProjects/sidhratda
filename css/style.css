@@ -47,6 +47,21 @@
 .nav_button{
 	margin-right:20px;
 }
+.nav-collapse .nav > li > a,
+  .nav-collapse .dropdown-menu a {
+	  color:#ffffff;
+	  padding-left:10%;
+	  border-radius:4px;
+}
+.nav-collapse .nav > li > a:hover,
+  .nav-collapse .nav > li > a:focus,
+  .nav-collapse .dropdown-menu a:hover,
+  .nav-collapse .dropdown-menu a:focus {
+    background-color: #0020FF;
+}
+.navbar .btn-navbar{
+	margin-right:8%;
+}
 .content{
 	background-image:url(../img/content.png);
 	background-repeat:repeat;
@@ -126,6 +141,7 @@
 	color:#ffffff;
 	text-decoration:none;
 	font-style:italic;
+	margin-left:4%;
 }
 .footer_nav li a:hover{
 	color:#FC5F43;
@@ -135,6 +151,7 @@
 	font-size:17px;
 	color:#ffffff;
 	margin-top:10px;
+	margin-left:4%;
 }
 /******* services page***********/
 .p_btn{
@@ -157,9 +174,11 @@
 }
 .about_article{
 	line-height:22px;
+	text-align:justify;
 }
 .about_thumbnail_img{
 	height:200px;
+	width:100%;
 }
 /********** contact *************/
 .contact_form{
@@ -200,17 +219,53 @@
 
 /******* media Query*********/
 
-@media all and (min-width:760px) and (max-width:1000px), (min-width:100px) and (max-width:550px){
+@media all and (min-width:768px) and (max-width:1000px), (min-width:100px) and (max-width:340px){
 	.contact_form input[type="text"], .contact_form textarea, .contact_form_h input[type="text"], .contact_form_h textarea{
 		float:none;
+		margin-left:2%;
 	}
 	.contact_form select, .contact_form_h select{
 		float:none;
+		margin-left:2%;
 	}
 	.contact_form_label, .contact_form_label_h{
 		float:none;
 	}
 	.contact_form input[type="submit"], .contact_form_h input[type="submit"]{
 		float:none;
+		margin-left:2%;
+	}
+	/*.contact_form_h{
+		margin-left:2%;
+	}*/
+}
+
+@media all and (min-width:100px) and (max-width:500px){
+	.contact_form input[type="text"], .contact_form textarea{
+		float:none;
+		margin-left:2%;
+	}
+	.contact_form select{
+		float:none;
+		margin-left:2%;
+	}
+	.contact_form_label{
+		float:none;
+	}
+	.contact_form input[type="submit"]{
+		float:none;
+		margin-left:2%;
+	}
+	.brand_header{
+		margin-left:5%;
+	}
+	
+}
+@media all and (min-width:500px) and (max-width:768px){
+	.contact_form_label_h{
+		margin-left:4%;
+	}
+	.brand_header{
+		margin-left:5%;
 	}
 }
