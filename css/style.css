@@ -50,13 +50,22 @@
 .content{
 	background-image:url(../img/content.png);
 	background-repeat:repeat;
-	padding:30px 0px;
+	padding:0px 0px;
 	min-height:720px;
 }
 /********* slider section***************/
 .slider_outline{
-	height:400px;
 	border-bottom:1px solid #DDD;
+}
+.carousel-inner > .item > img, .carousel-inner > .item > a > img{
+	margin:0 auto;
+}
+.carousel-caption{
+	width:92.7%;
+	margin:0 auto;
+}
+.carousel-indicators {
+	right: 43px;
 }
 /********** home page form*********/
 .contact_form_h{
